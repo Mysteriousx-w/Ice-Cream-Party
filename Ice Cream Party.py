@@ -51,6 +51,7 @@ def create_board(patterns):
     # 为每一行的每一列创建一个列表，列表中包含随机选择的图案
     return [[[random.choice(patterns) for _ in range(3)] for _ in range(COLS)] for _ in range(ROWS)]
 
+# 自动生成
 # 创建图案列表，确保每种图案的数量是3的倍数
 def create_patterns(patterns, total_tiles):
     pattern_count = {pattern: total_tiles // len(patterns) for pattern in patterns}
@@ -112,6 +113,7 @@ def draw_login_screen():
     # 将背景图像绘制到屏幕上
     screen.blit(background_image, (0, 0))
 
+# 自动生成
 # 定义检查匹配的函数
 def check_match():
     global score
@@ -131,6 +133,7 @@ def check_match():
     selected.clear()
     return False
 
+# 自动生成
 # 定义重新排列图片的函数
 def rearrange_tiles():
     # 遍历每一行的每一列
